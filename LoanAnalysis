@@ -1,0 +1,41 @@
+import pandas as pd
+import numpy as np
+import sqlite3
+import matplotlib.pyplot as plt
+%matplotlib inline
+import seaborn as sns
+
+
+loan = pd.read_csv('../input/LCdataloan.csv')
+loan.dtypes
+
+loan.head()
+
+plt.rc("figure", figsize=(6, 4))
+loan["loan_amnt"].hist()
+plt.title("distribution of loan amount")
+
+
+plt.rc("figure", figsize=(6, 4))
+loan["int_rate"].hist()
+plt.title("distribution of interest rate")
+
+
+loan[["loan_amnt","annual_inc"]].dropna().describe()
+
+loan_rate_related = pd.read_sql_query( """
+SELECT loan_amnt, term, int_rate, grade, emp_title, emp_length, home_ownership, annual_inc,issue_d,
+purpose, title, addr_state,application_type,
+CASE WHEN loan_amnt < 8000 THEN 'low' 
+     WHEN loan_amnt >= 8000 AND loan_amnt < 13000 THEN 'medium-low'
+     WHEN loan_amnt >= 13000 AND loan_amnt < 20000 THEN 'medium-high'
+     WHEN loan_amnt >= 20000 THEN 'high' END as loan_amnt_level,
+CASE WHEN annual_inc < 45000 THEN 'low'
+     WHEN annual_inc >= 45000 AND annual_inc <65000 THEN 'medium-low'
+     WHEN annual_inc >= 65000 AND annual_inc < 90000 THEN 'medium-high'
+     WHEN annual_inc >= 90000 THEN 'high' END as annual_inc_level
+FROM loan
+""",con)
+
+
+loan_rate_related.head()
