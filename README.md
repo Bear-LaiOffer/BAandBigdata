@@ -14,3 +14,4 @@ Lending Club 创立于2006年，主营业务是为市场提供P2P贷款的平台
 
 ## Reports:
 贷款对象是谁：
+https://github.com/Bear-LaiOffer/BAandBigdata/blob/master/bigdataandBA/1.jpg
