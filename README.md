@@ -79,6 +79,7 @@ Object基类对象的数据分布情况
 
 ![image](https://github.com/Bear-LaiOffer/BAandBigdata/blob/master/bigdataandBA/purpose.png)
 
+![image](https://github.com/Bear-LaiOffer/BAandBigdata/blob/master/bigdataandBA/incomevsloan.png)
 数值型特征与贷款等级的相关系数分布
 
 
