@@ -38,7 +38,7 @@ Object基类对象的数据分布情况
 4.贷款人的房屋状况大多是抵押贷款
 
 5.大多数人贷款的目的是债务整合
-![image](https://github.com/Bear-LaiOffer/BAandBigdata/blob/master/bigdataandBA/Why.png)
+![image](https://github.com/Bear-LaiOffer/BAandBigdata/blob/master/bigdataandBA/why.png)
 
 
 
