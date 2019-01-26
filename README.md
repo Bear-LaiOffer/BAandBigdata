@@ -78,12 +78,17 @@ Object基类对象的数据分布情况
 
 相关性分析
 其中total_rec_int（目前为止收到的利息）
+
 bc_util（银行卡流动余额与信贷限额比率）
+
 acc_open_past_24mths（过去24个月内的交易量）
+
 open_il_12m（过去12个月内开设的分期付款帐户数）等特征与贷款等级呈正相关关系。
 
 total_rev_hi_lim（总的周转信用额度）
+
 total_rec_prncp（迄今收到的本金）
+
 mths_since_recent_bc（自最近银行卡帐户开立以来的几个月）等特征与贷款等级呈明显的负相关关系。
 
 
