@@ -13,15 +13,12 @@ Lending Club 创立于2006年，主营业务是为市场提供P2P贷款的平台
 学习P2P公司的风控计划和用数据分析的办法衡量未来的贷款风险，降低坏账。
 
 ## Reports:
-贷款对象是谁：
+贷款数据包括以下的特征：
 
-![image](https://github.com/Bear-LaiOffer/BAandBigdata/blob/master/bigdataandBA/1.jpg)
+![image](https://github.com/Bear-LaiOffer/BAandBigdata/blob/master/bigdataandBA/2.jpg)
 
-对数据有的整体的认识 （中文部分）
-
-从上述的信息中可以看出：
-1.133891行数据，110个特征变量
-2.110个特征变量中有86个是浮点数类型，24个是Object对象。
+贷款的主要时间
+![image](https://github.com/Bear-LaiOffer/BAandBigdata/blob/master/bigdataandBA/dateissued.png)
 
 Object基类对象的数据分布情况
 
