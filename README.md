@@ -30,9 +30,7 @@ Lending Club 创立于2006年，主营业务是为市场提供P2P贷款的平台
 
 ![image](https://github.com/Bear-LaiOffer/BAandBigdata/blob/master/bigdataandBA/dateissuedbyStates.png)
 
-Object基类对象的数据分布情况
-
-从图表中可以得到部分信息：
+#### 信息总结：
 
 1.贷款共7个等级，占比最多的是B级
 ![image](https://github.com/Bear-LaiOffer/BAandBigdata/blob/master/bigdataandBA/loanamountbygrade.png)
@@ -103,5 +101,14 @@ mths_since_recent_bc（自最近银行卡帐户开立以来的几个月）
 
 
 
+#### 预测建模：构建分类器
+    分类器选择：随机森林(random forest)
+    采用交叉验证法划分数据集
+    将数据划分为3部分：训练集（training set）、验证集（validation set）和测试集（test set）。
+    让模型在训练集进行学习，在验证集上进行参数调优，最后使用测试集数据评估模型的性能。
+    
+    
 
+#### 最终模型结果及评估
 
+![image](https://github.com/Bear-LaiOffer/BAandBigdata/blob/master/bigdataandBA/suijisenlin.png)
