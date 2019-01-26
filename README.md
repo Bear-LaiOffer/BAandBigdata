@@ -6,6 +6,12 @@ Lending Club 创立于2006年，主营业务是为市场提供P2P贷款的平台
 2014年后公司开始为小企业提供商业贷款服务。
 2015年全年Lending Club平台新设贷款金额达到了83.6亿美元。
 
+目前，全世界的P2P热潮开始降温，但市场已经逐渐成熟化。
+
+
+![image](https://github.com/Bear-LaiOffer/BAandBigdata/blob/master/bigdataandBA/p2panalysis.jpg)
+
+
 ## 项目名称:
 预测Lending Club的贷款风险
 
@@ -47,7 +53,7 @@ Object基类对象的数据分布情况
 ![image](https://github.com/Bear-LaiOffer/BAandBigdata/blob/master/bigdataandBA/percentageof.png)
 
 
-空值、异常值处理
+#### 空值、异常值处理
 
 数据清洗。
 
@@ -55,7 +61,7 @@ Object基类对象的数据分布情况
 除去异常值，还包括对空值的处理，对于较为重要的特征来说，如果缺失值占比较小，可以通过填补均值进行处理。
 
 
-特征筛选
+#### 特征筛选
 清除一些与最终预测完全无关的变量，这里包括一部分方差值很小、无法得到更多信息的变量。
 
 这里的筛选标准如下：
@@ -67,7 +73,7 @@ Object基类对象的数据分布情况
 3.不可解释的特征
 
 
-相关系数：研究变量之间线性相关程度的量
+#### 相关系数：研究变量之间线性相关程度的量
 
 ![image](https://github.com/Bear-LaiOffer/BAandBigdata/blob/master/bigdataandBA/payment.png)
 
@@ -76,7 +82,7 @@ Object基类对象的数据分布情况
 数值型特征与贷款等级的相关系数分布
 
 
-相关性分析
+#### 相关性分析
 其中total_rec_int（目前为止收到的利息）
 
 bc_util（银行卡流动余额与信贷限额比率）
@@ -88,7 +94,7 @@ open_il_12m（过去12个月内开设的分期付款帐户数）等特征与贷�
 total_rev_hi_lim（总的周转信用额度）
 
 total_rec_prncp（迄今收到的本金）
-
+ 
 mths_since_recent_bc（自最近银行卡帐户开立以来的几个月）等特征与贷款等级呈明显的负相关关系。
 
 
