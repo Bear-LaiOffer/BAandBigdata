@@ -20,15 +20,25 @@ Lending Club 创立于2006年，主营业务是为市场提供P2P贷款的平台
 贷款的主要时间
 ![image](https://github.com/Bear-LaiOffer/BAandBigdata/blob/master/bigdataandBA/dateissued.png)
 
+如果按照分类来看
+
+![image](https://github.com/Bear-LaiOffer/BAandBigdata/blob/master/bigdataandBA/dateissuedbyStates.png)
+
 Object基类对象的数据分布情况
 
 从图表中可以得到部分信息：
 1.贷款共7个等级，占比最多的是B级
+
 2.还款的形式有两种，占比最多的是36个月
+
 3.贷款人中大多数人工龄10+年
+
 4.贷款人的房屋状况大多是抵押贷款
+
 5.大多数人贷款的目的是债务整合
+
 6.id与desc特征的数据缺失率高达0.99，间接表明这两个特征可以删除掉。
+
 
 
 均值、标准差、四分位数以及数据的缺失比重等信息。
